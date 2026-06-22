@@ -154,13 +154,3 @@ npm run preview
 
 ---
 
-## 👤 Candidate Details
-
-| | |
-|---|---|
-| **Name** | Sarthak Saraf |
-| **Role Applied** | Full Stack Developer Intern |
-| **Email** | *(your email)* |
-| **Submission Deadline** | 2 days from receipt |
-| **Submitted To** | careers@botmakerstech.in |
-| **CC** | developers.botmakers@gmail.com |
