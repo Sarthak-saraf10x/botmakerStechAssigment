@@ -9,7 +9,7 @@
 
 | | |
 |---|---|
-| **Live Deployment** | *(coming soon)* |
+| **Live Deployment** |https://botmaker-stech-assigment.vercel.app/|
 | **GitHub Repository** | [github.com/Sarthak-saraf10x/botmakerStechAssigment](https://github.com/Sarthak-saraf10x/botmakerStechAssigment) |
 
 ---
