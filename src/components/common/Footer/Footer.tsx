@@ -4,8 +4,8 @@ import logoImg from '../../../assets/images/backgrounds/logo.png';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative z-10 py-16 bg-[#0c0b0b] text-gray-400 text-sm">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-[#2e2e2e] pb-12">
+    <footer className="relative z-10 py-12 md:py-16 bg-[#0c0b0b] text-gray-400 text-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 md:gap-12 border-b border-[#2e2e2e] pb-10 md:pb-12">
         {/* Logo & Intro */}
         <div className="md:col-span-4 space-y-4 text-left">
           <div className="flex items-center gap-3">

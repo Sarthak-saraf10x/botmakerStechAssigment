@@ -3,12 +3,12 @@ import advantageImg from '../../assets/images/backgrounds/advantage_img.png';
 
 export const AdvantageSection: React.FC = () => {
   return (
-    <section className="relative z-10 py-24 bg-[#100f0f]">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="relative z-10 py-16 md:py-24 bg-[#100f0f]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
         <div className="space-y-12 text-left">
           <div>
             <span className="text-xs font-bold tracking-widest text-[#ff4c4c] uppercase block mb-2">THE LEAGUE ADVANTAGE</span>
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white">WHY REGISTER?</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">WHY REGISTER?</h2>
           </div>
 
           <div className="space-y-6">

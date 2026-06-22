@@ -18,16 +18,16 @@ export const EventsSection: React.FC<EventsSectionProps> = ({
   const filteredEvents = events.filter(event => event.status === activeTab);
 
   return (
-    <section id="events" className="relative z-10 py-24 border-t border-[#2e2e2e] bg-[#0c0b0b]/90">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 text-left">
+    <section id="events" className="relative z-10 py-16 md:py-24 border-t border-[#2e2e2e] bg-[#0c0b0b]/90">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-12 text-left gap-4">
           <div>
             <span className="text-xs font-bold tracking-widest text-[#ff4c4c] uppercase block mb-2">ARENA SHOWDOWNS</span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-white">COMPETITIONS & EVENTS</h2>
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex bg-[#1a1919] p-1.5 rounded-lg border border-[#2e2e2e] mt-6 md:mt-0 max-w-md">
+          <div className="flex bg-[#1a1919] p-1 sm:p-1.5 rounded-lg border border-[#2e2e2e] overflow-x-auto">
             <button 
               onClick={() => setActiveTab('ongoing')}
               className={`flex-1 px-5 py-2 text-xs font-bold tracking-wider rounded transition-all uppercase ${activeTab === 'ongoing' ? 'bg-[#ff4c4c] text-white shadow' : 'text-gray-400 hover:text-white'}`}

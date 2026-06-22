@@ -13,10 +13,10 @@ export const DisciplineModal: React.FC<DisciplineModalProps> = ({ discipline, on
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="bg-[#100f0f] border border-[#2e2e2e] rounded-2xl max-w-2xl w-full shadow-2xl relative overflow-hidden max-h-[90vh] overflow-y-auto">
+      <div className="bg-[#100f0f] border border-[#2e2e2e] rounded-2xl max-w-2xl w-full shadow-2xl relative overflow-hidden max-h-[92vh] overflow-y-auto mx-2 sm:mx-0">
 
         {/* Hero image */}
-        <div className="relative h-52 w-full bg-[#0c0b0b] overflow-hidden flex-shrink-0">
+        <div className="relative h-36 sm:h-44 md:h-52 w-full bg-[#0c0b0b] overflow-hidden flex-shrink-0">
           <img
             src={discipline.imageSrc}
             alt={discipline.title}
@@ -43,7 +43,7 @@ export const DisciplineModal: React.FC<DisciplineModalProps> = ({ discipline, on
         </div>
 
         {/* Body */}
-        <div className="p-6 space-y-6">
+        <div className="p-4 sm:p-6 space-y-5 sm:space-y-6">
           {/* Tagline */}
           <p className="text-sm text-gray-300 italic border-l-2 pl-4 leading-relaxed"
             style={{ borderColor: discipline.accentColor }}>
@@ -54,7 +54,7 @@ export const DisciplineModal: React.FC<DisciplineModalProps> = ({ discipline, on
           <p className="text-sm text-gray-400 leading-relaxed">{discipline.description}</p>
 
           {/* Stats grid */}
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               { icon: Clock, label: 'Match Duration', value: discipline.duration },
               { icon: Users, label: 'Team Size', value: discipline.teamSize },
@@ -112,7 +112,7 @@ export const DisciplineModal: React.FC<DisciplineModalProps> = ({ discipline, on
         </div>
 
         {/* Footer CTA */}
-        <div className="px-6 pb-6">
+        <div className="px-4 sm:px-6 pb-4 sm:pb-6">
           <button
             onClick={onClose}
             className="w-full py-3 rounded-xl text-sm font-bold uppercase tracking-wider text-white transition-all duration-200 cursor-pointer hover:brightness-110 active:scale-95"

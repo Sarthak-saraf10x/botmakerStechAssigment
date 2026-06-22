@@ -13,13 +13,13 @@ export const CategoryModal: React.FC<CategoryModalProps> = ({ category, onClose 
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="bg-[#100f0f] border border-[#2e2e2e] rounded-2xl max-w-2xl w-full shadow-2xl relative overflow-hidden max-h-[90vh] overflow-y-auto">
+      <div className="bg-[#100f0f] border border-[#2e2e2e] rounded-2xl max-w-2xl w-full shadow-2xl relative overflow-hidden max-h-[92vh] overflow-y-auto mx-2 sm:mx-0">
         
         {/* Accent glow top bar */}
         <div className="absolute top-0 left-0 right-0 h-1" style={{ background: category.accentColor }} />
 
         {/* Header */}
-        <div className="p-6 border-b border-[#2e2e2e] flex items-start justify-between gap-4">
+        <div className="p-4 sm:p-6 border-b border-[#2e2e2e] flex items-start justify-between gap-3">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: `${category.accentColor}18`, border: `1px solid ${category.accentColor}30` }}>
@@ -42,7 +42,7 @@ export const CategoryModal: React.FC<CategoryModalProps> = ({ category, onClose 
         </div>
 
         {/* Body */}
-        <div className="p-6 space-y-6">
+        <div className="p-4 sm:p-6 space-y-5 sm:space-y-6">
           {/* Tagline */}
           <p className="text-sm text-gray-300 leading-relaxed border-l-2 pl-4 italic"
             style={{ borderColor: category.accentColor }}>
@@ -55,7 +55,7 @@ export const CategoryModal: React.FC<CategoryModalProps> = ({ category, onClose 
           </p>
 
           {/* Stats row */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             <div className="bg-[#1a1919] border border-[#2e2e2e] rounded-xl p-4 text-center">
               <Users className="w-5 h-5 mx-auto mb-2 text-gray-500" />
               <p className="text-[10px] text-gray-500 uppercase tracking-wider mb-1">Age Group</p>
@@ -115,7 +115,7 @@ export const CategoryModal: React.FC<CategoryModalProps> = ({ category, onClose 
         </div>
 
         {/* Footer CTA */}
-        <div className="px-6 pb-6">
+        <div className="px-4 sm:px-6 pb-4 sm:pb-6">
           <button
             onClick={onClose}
             className="w-full py-3 rounded-xl text-sm font-bold uppercase tracking-wider text-white transition-all duration-200 cursor-pointer hover:brightness-110 active:scale-95"

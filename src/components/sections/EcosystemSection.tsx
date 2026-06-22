@@ -24,11 +24,11 @@ export const EcosystemSection: React.FC = () => {
   };
 
   return (
-    <section id="ecosystem" className="relative z-10 py-24 bg-[#100f0f]">
-      <div className="max-w-7xl mx-auto px-6 space-y-16">
+    <section id="ecosystem" className="relative z-10 py-16 md:py-24 bg-[#100f0f]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12 md:space-y-16">
         <div className="text-center">
           <span className="text-xs font-bold tracking-widest text-[#ff4c4c] uppercase block mb-2">ENGAGE WITH THE CREW</span>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white animate-pulse">JOIN THE ECOSYSTEM</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">JOIN THE ECOSYSTEM</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
